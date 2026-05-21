@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+}
+
+nav {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+nav .logo {
+    height: 100%;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h2 {
+    color: white;
+}
+
+nav .nav-button {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+nav .get-start {
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.get-start button {
+    padding: 8px 20px;
+    color: white;
+    border: none;
+    background-color: #141314;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 5px;
+
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main .top-text {
+    width: 100%;
+    height: 40%;
+    color: white;
+}
+
+.top-text .heading {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heading h1 {
+    /* font-size: 140px; */
+    font-size: clamp(3rem, 10vw, 8rem); /*used this for larger size font*/
+}
+
+.top-text .btn {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn button {
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #171717;
+    color: white;
+    transition: all 0.3s ease-in;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn button:nth-child(1){
+    background-color: #ff4a08;
+}
+
+.btn button:hover {
+    background-color: #ff4a08;
+}
+
+main .bottom-card {
+    width: 100%;
+    height: 58%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.bottom-card .card {
+    width: 300px;
+    height: 100%;
+    background-color: rgba(67, 65, 65, 0.267);
+    border-radius: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 55%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 15px;
+}
+
+.card .text {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: white;
+    padding: 0px 20px;
+    width: 100%;
+
+}
+
+.text button {
+    width: fit-content;
+    padding: 9px 20px;
+    border-radius: 20px;
+    border: none;
+    background-color: #591e0a;
+    color: #e88c5a;
+    font-size: 15px;
+    font-weight: 500;
+        transition: all 0.3s ease-in;
+
+}
+
+.text button:hover {
+    background-color: #ff4a08;
+    color: white;
+}
+
+.text h4 {
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.text p {
+    color: #6e6e6e;
+    font-size: 14px;
+    font-weight: 500;
+}
