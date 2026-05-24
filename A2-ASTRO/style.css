@@ -388,11 +388,11 @@ padding-bottom: 10px;
 }
 
 main .more-jacket-info .jacketImg img{
-    width: 250px;
+    width: 200px;
     padding: 0px;
     cursor: pointer;
-    
 }
+
 .more-jacket-info .jacket-offer{
     display: flex;
     flex-direction: column;
@@ -457,3 +457,4 @@ main .more-jacket-info-2{
     font-size: 15px;
     opacity: 0.5;
 }
+
