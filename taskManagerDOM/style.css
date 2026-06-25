@@ -248,10 +248,10 @@ main .task-info {
 
 .task-info .aboutCard {
     width: 75vw;
-    min-height: 20vh;
+    min-height: 50vh;
     padding: 1rem;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: none;
     gap: 2rem;
 }
@@ -278,13 +278,7 @@ main .task-info {
     border-radius: 0.5rem;
     padding: 0.7rem;
 }
-/* .task-info .doing-card {
-    background-color: gray;
-}
 
-.task-info .completed-card {
-    background-color: rgb(87, 24, 66);
-} */
 
 .aboutCard .top-part {
     display: flex;
@@ -390,4 +384,54 @@ main .task-info {
 .modifly .btn i{
     padding-right: 1rem;
     font-size: 20px;
+}
+
+
+/* Dark Mode */
+
+body.dark {
+    background-color: #1a1a1a;
+    color: white;
+}
+
+body.dark nav,
+body.dark .top,
+body.dark .task-info {
+    background-color: #2a2a2a;
+}
+
+body.dark .all-task,
+body.dark .pending-card,
+body.dark .doing-card,
+body.dark .completed-card {
+    background-color: #333;
+}
+
+body.dark .tasks {
+    background-color: #444;
+    color: white;
+}
+
+body.dark input,
+body.dark select {
+    background-color: #555;
+    color: white;
+    border-color: #777;
+}
+
+body.dark .logo h2,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark p {
+    color: white;
+}
+
+body.dark .modifly .btn {
+    color: white;
+    border-color: white;
+}
+
+body.dark .modes i {
+    color: gold;
 }
