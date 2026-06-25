@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <h2>
+                    TaskFlow
+                </h2>
+            </div>
+
+            <div class="form">
+                <form>
+                    <input type="search" placeholder="seacher tasks by name">
+                    <i class="ri-search-line"></i>
+                </form>
+                <button class="filterBtn"><span><i class="ri-equalizer-2-line"></i></span>Filter</button>
+            </div>
+
+            <div class="right-side">
+                <button class="pf">
+                    <h4><span><i class="ri-user-line"></i></span> UserProfile</h4>
+                </button>
+
+                <button class="modes">
+                    <i class="ri-moon-line"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="top">
+            <div class="top-text">
+                <h2>Add Task</h2>
+
+                <div class="task-creation">
+                    <form class="taskForm">
+                        <input class="taskName" type="text" placeholder="Describe new task...">
+
+                        <select class="status">
+                            <option value="pending">Pending</option>
+                            <option value="doing">Doing</option>
+                            <option value="completed">Completed</option>
+                        </select>
+
+                        <div class="btn">
+                            <button type="button" class="addTask"><span><i class="ri-add-large-line"></i></span>Add Task</button>
+                            <button type="reset" class="clearTask"><span><i class="ri-restart-line"></i></span>Clear All</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="task-info">
+            <div class="aboutCard">
+
+
+                <div class="all-task">
+                    <div class="top-part">
+                        <h2>All Tasks</h2>
+                        <p class="num-task">0</p>
+                    </div>
+
+                    <div id="all-mission">
+                    </div>
+                </div>
+
+                <div class="pending-card">
+                    <div class="top-part">
+                        <h2>Pending</h2>
+                        <p class="num-task">0</p>
+                    </div>
+
+                    <div id="pending" class="tasks-box">
+                    </div>
+                </div>
+
+                <div class="doing-card">
+                    <div class="top-part">
+                        <h2>Doing</h2>
+                        <p class="num-task">0</p>
+                    </div>
+
+                    <div id="doing" class="tasks-box">
+                        
+                    </div>
+                </div>
+
+                <div class="completed-card">
+                    <div class="top-part">
+                        <h2>Completed</h2>
+                        <p class="num-task">3</p>
+                    </div>
+
+                    <div id="complete" class="tasks-box">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
