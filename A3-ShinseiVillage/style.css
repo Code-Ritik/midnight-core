@@ -1,0 +1,198 @@
+@font-face {
+    font-family: figtree;
+    src: url("./fa-brands-400.woff2");
+}
+
+@font-face {
+    font-family: zombo;
+    src: url("./Zomboid.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+/* 
+body{
+ 
+
+    background-size: cover;
+    background-position: 0px -120px;
+} */
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: #2d2e38;
+
+}
+
+main .top {
+    height: 75%;
+    background-image: url("./background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom-left-radius: 100% 120px;
+    border-bottom-right-radius: 100% 120px;
+    position: relative;
+    overflow: hidden;
+    padding: 1rem;
+}
+
+.top nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+nav .logo{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    width: 60%;
+}
+
+nav .nav-link{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+a:hover{
+    border-bottom: 2px solid wheat;
+}
+
+nav .social-media{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.social-media i{
+    font-size: 1.6rem;
+    color: white;
+    padding: 0.2rem;
+    border-radius: 0.6rem;
+    background-color: rgb(255, 255, 255,0.5);
+    cursor: pointer;
+}
+
+.top .text{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+
+.top .top-p{
+    width: 45%;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.top .heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    justify-content: center;
+}
+.top h1{
+    font-family: zombo;
+   font-size: 6.5rem;
+}
+
+.top .bottom-p{
+    width: 45%;
+    font-size: 1.4rem;
+    text-align: right;
+}
+
+.top #monkey{
+    padding-top: 8rem;
+    width: 23%;
+    /* height: 100%; */
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+}
+
+main .bottom-part{
+    /* padding: 1rem; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.2rem; */
+}
+
+.bottom-part .bottom-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottom-heading h1{
+    font-family: zombo;
+    font-size: 2.5rem;
+    color: gold;
+}
+
+.bottom-part .border-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-part .deatail{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.deatail p{
+    width: 40%;
+    font-family: figtree;
+    color: white;
+    font-size: 15px;
+    font-weight: 100;
+    opacity: 0.7;
+}
