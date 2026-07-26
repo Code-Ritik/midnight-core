@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #FEFEFE;
+}
+
+
+
+.top-center {
+  grid-area: top-center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5rem;
+  padding-bottom: 5rem;
+}
+.nav-logo h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+}
+.nav-mid-sec a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  margin: 0 0.5rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+.nav-icons{
+  position: relative;
+}
+lord-icon {
+  cursor: pointer;
+  margin: 0 5px;
+}
+.black-bg{
+    background-color: black;
+    border-radius: 60%;
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: -10px;
+    right: -5px;
+}
+.line{
+    width: 90%;
+    height: 1px;
+    border: 1px solid #F4F4F4;
+    position: absolute;
+    top: 90px;
+    margin-left: 10px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.sec-top-center {
+  grid-area: sec-top-center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.sec-top-center img{
+  width: 50px;
+}
+.sec-top-center h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 70px;
+    line-height: 80px;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+.col-1 {
+  grid-area: col-1;
+}
+.col-1-img img {
+      width: 50%;
+}
+.summer{
+
+    margin:0 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.summer-left-sec{
+  display: flex;
+}
+.summer-left-sec img{
+  margin-left: 10rem;
+}
+.summer-right-sec img{
+  width: 150px;
+}
+.summer p{
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+}
+.summer h1{
+  margin-top: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+}
+.cards {
+  margin: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(4,200px);
+  gap: 1rem;
+  position: relative;
+  margin-top: -10rem;
+}
+
+.cards img{
+  border-radius: 25px;
+}
+.card-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    align-self: end;
+    position: absolute;
+    bottom: 105px;
+    left: 35px;
+}
+.card-2 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    align-self: end;
+    position: absolute;
+    bottom: 3rem;
+    left: 19px;
+}
+.star{
+    position: absolute;
+    top: -302px;
+    left: 337px;
+    z-index: 1;
+    width: 136px;
+}
+.card-3{
+      grid-column: 2 / 3;
+      grid-row: 3 / 5;
+      position: absolute;
+      bottom: 200px;
+      left: 20px;
+}
+.card-4{
+     grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    align-self: anchor-center;
+    position: absolute;
+
+}
+.card-5 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    align-self: end;
+    position: absolute;
+    bottom: 162px;
+    left: 42px;
+}
+.card-6{
+  grid-column: 4 / 5;
+    grid-row: 1 / 4;
+    align-self: end;
+    position: absolute;
+    bottom: -40px;
+    left: 41px;
+}
+.card-7{
+  grid-column: 5 / 6;
+    grid-row: 1 / 4;
+    align-self: end;
+    position: absolute;
+    bottom: 48px;
+    left: 25px;
+
+}
+.card-7 h1{
+  text-align: center;
+   font-family: "Montserrat", sans-serif;
+}
+/*  */
+.footer{
+    margin: -5rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    padding-bottom: 2rem;
+    position: relative;
+}
+
+/* LEFT SIDE */
+
+/* .footer-left{
+    width: 300px;
+} */
+
+.quote-icon{
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.footer-left p{
+     font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.signature img{
+        width: 15rem;
+}
+
+/* CENTER */
+
+.footer-center{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 5rem;
+
+}
+
+.footer-center img{
+    width: 50px;
+    position: absolute;
+    left: 30rem;
+    top: 10rem;
+}
+
+.footer-center button{
+    font-weight: 600;
+    padding: 1.2rem 1.5rem;
+    border: 1px solid #e5e5e5;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+     font-family: "Montserrat", sans-serif;
+}
+.skew-rectangle{
+    width: 20px;
+    height: 30px;
+    background-color: #EDD4A8;
+    position: absolute;
+    transform: skew(30deg);
+    top: 135px;
+    left: 50rem;
+
+}
+
+/* RIGHT SIDE */
+
+.last-flower {
+    position: absolute;
+    top: 30rem;
+    left: 7rem;
+    width: 50px !important;
+}
+
+.footer-top-text p{
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number{
+    font-size: 80px;
+    font-weight: 300;
+    font-family: "Poppins", sans-serif;
+}
+
+.text h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    line-height: 1.3;
+    padding: 0 1rem;
+}
+
+.arrow{
+    width: 60px;
+    height: 60px;
+
+    background: black;
+    color: white;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 30px;
+
+    cursor: pointer;
+}
